@@ -102,3 +102,64 @@ body {
   hyphens: auto;
   word-wrap: break-word;
 }
+
+@media (max-width: 1357px) {
+  .mem-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+
+  .mem-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 875px) {
+  .container {
+    gap: 90px;
+  }
+  .select-frame {
+    width: 100%;
+  }
+
+  .input-frame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: 55px;
+  }
+
+  .setting-title,
+  .preview-title {
+    font-size: 35px;
+  }
+  .setting-title {
+    margin-bottom: 15px;
+  }
+  .preview-title {
+    margin-bottom: 30px;
+  }
+
+  .item-text {
+    margin-bottom: 7px;
+    font-size: 28px;
+  }
+
+  .input-text {
+    font-size: 20px;
+  }
+
+  .select-frame {
+    margin-bottom: 35px;
+    padding: 8px;
+    font-size: 20px;
+  }
+}
