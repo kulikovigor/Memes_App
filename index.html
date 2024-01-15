@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Memes App</title>
+</head>
+<body>
+    <div class="container"> 
+
+    <div class="setting">
+        <h2 class="setting-title">Setting:</h1>
+        <p class="item-text">Meme</p>
+        <select class="js-memes-select select-frame" placeholder="Select image"></select>
+
+        <p class="item-text">Text on the top</p>
+        <input type="text" id="uptext" class="js-text-top-input input-text input-frame">
+
+        <p class="item-text">Text on the bottom</p>
+        <input type="text" id="downtext" class="js-text-bottom-input input-text input-frame">
+    </div>
+
+    <div class="preview">
+        <h2 class="preview-title">Preview:</h2>
+        <div class="img-frame">
+        <img class="js-image mem-image">
+        <div class="text-top">
+        <p class="js-top-text mem-text-up"></p>
+        </div>
+        <div class="text-bottom">
+        <p class="js-bottom-text mem-text-bottom"></p>
+        </div>
+        </div>
+
+    </div>
+    
+
+    </div>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="api.js"></script>
+    <script src="controller.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

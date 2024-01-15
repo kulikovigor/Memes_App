@@ -1,0 +1,104 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 90px;
+  gap: 120px;
+}
+
+.setting-title,
+.preview-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+}
+.setting-title {
+  margin-bottom: 25px;
+}
+.preview-title {
+  margin-bottom: 40px;
+}
+
+.item-text {
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.input-text {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.select-frame {
+  max-width: 425px;
+  margin-bottom: 40px;
+  padding: 11px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.input-frame {
+  width: 400px;
+  margin-bottom: 30px;
+  padding: 11px;
+  font-family: Montserrat;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.mem-text-up,
+.mem-text-bottom {
+  font-family: IBM Plex Sans;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #FFF;
+}
+
+.mem-image {
+  max-width: 700px;
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.img-frame {
+  position: relative;
+  width: 100%;
+}
+
+.text-top {
+  position: absolute;
+  padding: 7px;
+  top: 8%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text-bottom {
+  position: absolute;
+  padding: 7px;
+  bottom: 11%;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.text-top,
+.text-bottom {
+  hyphens: auto;
+  word-wrap: break-word;
+}
