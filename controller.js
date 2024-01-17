@@ -27,6 +27,9 @@ class Controller {
                 // console.log(memes)
                 this.model.setMemes(memes);
             });
+
+            // this.view.validationMessageTopNode.style.display = 'none';
+            this.view.validationMessageBottomNode.style.display = 'none';
     }
 
     // на изменение Мемов в Моделе есть отображение Select(a)
@@ -73,7 +76,12 @@ class Controller {
 }
 
     function validation () {
+
+        const textValid = document.getElementById('validationMessage');
+
         if (50 < document.getElementById('uptext').value.length || 50 < document.getElementById('downtext').value.length) {
-            alert ("You have entered a lot of characters. Delete the previous character")
+            // this.view.validationMessageBottomNode.innerText = "You have entered a lot of characters. Delete the previous character";
+            textValid.innerText = "You have entered a lot of characters. Delete the previous character";
+            
     }   
 }
