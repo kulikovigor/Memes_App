@@ -103,6 +103,17 @@ body {
   word-wrap: break-word;
 }
 
+.validationMessage {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 5px;
+  color: red;
+}
+
+/* .validationMessage_hidden {
+  display: none;
+} */
+
 @media (max-width: 1357px) {
   .mem-image {
     width: 100%;
