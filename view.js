@@ -13,6 +13,8 @@ class View {
         this.textTopInputNode = document.querySelector('.js-text-top-input');
         this.textBottomInputNode = document.querySelector('.js-text-bottom-input');
 
+        this.validationMessageBottomNode = document.querySelector('.validationMessage');
+
         this.onMemeChange = onMemeChange;
         this.onTextTopChange = onTextTopChange;
         this.onTextBottomChange = onTextBottomChange;
@@ -30,6 +32,12 @@ class View {
             textTop,
             textBottom
         } = prewiew;
+
+            if (textBottom.length > 50) {
+            this.validationMessageBottomNode.style.display = 'block';
+            } else {
+            this.validationMessageBottomNode.style.display = 'none';
+            }
 
     // тут взаимодействуем с DOM деревом, меняем обновляем данные 
         this.previewTopTextNode.innerText = textTop;
